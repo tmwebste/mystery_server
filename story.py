@@ -229,23 +229,3 @@ def createCharacterResponse(message, characterProfile, responseTemplate, story):
 if (__name__ == "__main__" ):
     print("main method")
 
-    # createCompleteStoryJSON()
-
-
-
-
-# animal = "hillary clinton"
-
-# chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": "create a speach where donald trump tries to minimize his nefarious actions that resulted in him breaking his pinky in a funny way"}]).choices[0].message.content
-
-# chat_completion = chat_completion.replace('pinky', 'cock').replace('finger', '').replace('\n', '').replace('fingers', 'cock').replace('finger\'s', 'cock')
-# print(chat_completion)
-
-# response = openai.Image.create(
-#   prompt="create a computer wallpaper with a 8-bit cyberpunk japanese theme",
-#   n=1,
-#   size="1024x1024"
-# )
-# image_url = response['data'][0]['url']
-
-# print(image_url)
