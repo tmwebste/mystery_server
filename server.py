@@ -4,7 +4,6 @@ import json
 from flask import Flask, jsonify, redirect, render_template, request, url_for, stream_with_context, json, Response
 from flask_cors import CORS
 from story import *
-import sseclient
 
 
 # Define the path to your JSON data folder

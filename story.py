@@ -3,7 +3,13 @@ import json
 import random
 
 import openai
-from private import *
+from dotenv import dotenv_values
+
+# Load the .env file
+config = dotenv_values('.env')
+
+# Access the specific key
+KEY = config.get('KEY')
 
 openai.api_key = KEY
 
@@ -38,7 +44,7 @@ def createCharacterAttributes():
 def createStoryTheme(storyYear):
     print("creating story theme")
     instructions = f"freate a 1 word theme for the world for a murder mystery set in the year {storyYear}. Only respont with a single word and do not provide any explaination."
-    chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", 
+    chat_completion = openai.chat.completions.create(model="gpt-3.5-turbo", 
                                                     messages=[{"role": "user", 
                                                                 "content": f"{instructions}"}]).choices[0].message.content
     print(chat_completion)
@@ -47,7 +53,7 @@ def createStoryTheme(storyYear):
 def createStoryDescription(storyYear, storyTheme):
     print("creating story description")
     instructions = f"Create a paragraph describing the situation for a murder mystery in the theme of {storyTheme} in the year {storyYear} "
-    chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", 
+    chat_completion = openai.chat.completions.create(model="gpt-3.5-turbo", 
                                                 messages=[{"role": "user", 
                                                             "content": f"{instructions}"}]).choices[0].message.content
     print(chat_completion)
@@ -55,7 +61,7 @@ def createStoryDescription(storyYear, storyTheme):
 
 def createOneWord(request):
     instructions = f"{request}. Only respont with a single word and do not provide any explaination."
-    chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", 
+    chat_completion = openai.chat.completions.create(model="gpt-3.5-turbo", 
                                                     messages=[{"role": "user", 
                                                                 "content": f"{instructions}"}]).choices[0].message.content
     return chat_completion
@@ -64,7 +70,7 @@ def createCharacterBackground(storyYear, storyTheme, backgroundTemplate):
     print("creating character background")
     instructions = f"using this json template, replace all null values with character background information to support a {storyTheme} themed mystery murder in the year {storyYear}. Please consider the (_comments) within the template, the Json object should have narative consistancy with the theme. None of the characters should be detectives or investigators and they should all be pretty suspicious. All of the informationb should be known. Ensure the json matches all the requests and has no remaining null values. Please respond with only the completed json object and no comments, do not respond with any comments. "
 
-    chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", 
+    chat_completion = openai.chat.completions.create(model="gpt-3.5-turbo", 
                                                 messages=[{"role": "user", 
                                                             "content": f"{instructions} {json.dumps(backgroundTemplate)}"}]).choices[0].message.content
     print(chat_completion)
@@ -170,7 +176,7 @@ def createStory(storyYear, storyTheme, storyTemplate):
     print("Finalizing story ")
     instructions = f"using this json template, replace all null values with information to support a {storyTheme} themed mystery murder with 5 characters set in the year {storyYear}. Please consider the (_comments) within the template, the Json object should have narative consistancy with all the information created under the (story) key. None of the characters should be investigators or detectives and they should all be suspicious. Ensure the json matches all the requests and has absolutely no remaining null values. Please respond with only the completed json object and no comments, do not respond with any comments. "
     
-    chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", 
+    chat_completion = openai.chat.completions.create(model="gpt-3.5-turbo", 
                                                    messages=[{"role": "user", 
                                                               "content": f"{instructions} {json.dumps(storyTemplate)}"}]).choices[0].message.content
     
@@ -188,7 +194,7 @@ def getMessageSentament(message, responseTemplate):
     instructions = f"You will be evaluating the sentament of the user message. The sentament can only be positive or negative. Please respond with only the word positive or negative and no comments. do not respond with any comments."
 
     try:
-        chat_completion = openai.ChatCompletion.create(
+        chat_completion = openai.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
                 {"role": "system", "content": instructions},
@@ -209,7 +215,7 @@ def createCharacterResponse(message, characterProfile, responseTemplate, story):
     instructions = f"using plain language, create a 2 sentence response. you are the character here {json.dumps(characterProfile['background'])}. You are being investigated for a murder described by this story {json.dumps(story)}. Please respond with only the characters(who is a little angry) response in first person and no comments. Answer the question even if it is goofy or irrelevant but your response bust be realevant to the story and character. Do not break character; do not respond with any comments."
 
     try:
-        chat_completion = openai.ChatCompletion.create(
+        chat_completion = openai.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
                 {"role": "system", "content": instructions},
