@@ -1,0 +1,154 @@
+{
+    "game": {
+        "playing": "false",
+        "story": {
+            "year": 3512,
+            "theme": "Eclipse",
+            "synopsys": "In the distant year of 3512, under the haunting glow of a celestial Eclipse, darkness shrouds the city of Veridian. A puzzling murder has sent shockwaves through the technological metropolis, leaving its inhabitants gripped with fear and suspicion. The victim, an esteemed scientist known for pushing the boundaries of intergalactic advancements, met a grisly end within the confines of his state-of-the-art laboratory. As the sun's vibrant radiance fades behind the moon, a myriad of secrets, deceit, and hidden alliances come to the forefront, turning the once peaceful city into a labyrinth of unanswered questions. With the complexity of investigative technology far surpassing our current comprehension, it is up to a fearless detective and their sentient AI partner to navigate this futuristic world in search of the truth, relentlessly pursuing justice before the Eclipse recedes and darkness descends once more upon Veridian.",
+            "numberOfCharacters": 5,
+            "evidence": {
+                "_wittnessesComment": "whitnesses should be a list of a sebset of all the characters",
+                "weapon": "Dagger",
+                "witnesses": "null"
+            }
+        },
+        "characters": {
+            "_comments": "fill this sections with several characters (this should match the numberOfCharacters value) that fit the story theme, only one person should be guilty",
+            "judge": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.32431648916620326,
+                    "happiness": 0.085849185581091,
+                    "anger": 0.5386803826075214,
+                    "anxiety": 0.7177713593508467,
+                    "fear": 0.3006888500188728
+                },
+                "background": {
+                    "firstName": "Luna",
+                    "lastName": "Eclipse",
+                    "age": "29",
+                    "occupation": "Astrologer",
+                    "backstory": "Luna Eclipse, a renowned astrologer, was born under a rare celestial event. Her mysterious birth during a solar eclipse bestowed her with an innate ability to decipher the cosmos. Growing up, Luna delved into the secrets of ancient prophecies and studied the art of astrology. Gradually, she became a trusted advisor to many influential people within the futuristic cityscape of 3512. Her enigmatic aura and uncanny accuracy in predicting the future made her the go-to person for any profound cosmic insights.",
+                    "bias": "Given her deep connection with celestial bodies, Luna tended to view events through an otherworldly lens. She often believed that planetary alignments held significant sway over human destinies, sometimes to the point of obscurity. However, her esoteric perspective granted her a unique perspective on the world's happenings, allowing her to unravel mysteries that often eluded others.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character1": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.9546202448176497,
+                    "happiness": 0.44632114318657223,
+                    "anger": 0.6027668468716387,
+                    "anxiety": 0.6723763006326191,
+                    "fear": 0.9217613475317274
+                },
+                "background": {
+                    "firstName": "Luna",
+                    "lastName": "Eclipse",
+                    "age": "34",
+                    "occupation": "Astrologer",
+                    "backstory": "Luna Eclipse, a renowned astrologer in the year 3512, had always been fascinated by the mysteries of the cosmos. From a young age, Luna gazed at the stars, drawing immense inspiration from celestial events. Luna's relentless pursuit of knowledge led to a deep understanding of eclipses, making Lunar Eclipse an expert in predicting these awe-inspiring phenomena.",
+                    "bias": "As an astrologer, Luna firmly believed that eclipses were powerful events infused with mystical energy. She considered them as cosmic portals, capable of ushering strange and fateful occurrences. Luna's belief in the connection between eclipses and mysterious events created an extraordinary bias towards the eclipse-themed mystery murder that unfolded in her time. This bias made Luna eager to uncover the truth and harness the celestial energy to aid in solving the case.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character2": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.43598028353090823,
+                    "happiness": 0.7752374392284398,
+                    "anger": 0.07887495377999776,
+                    "anxiety": 0.6784543619914305,
+                    "fear": 0.774482055138755
+                },
+                "background": {
+                    "firstName": "Luna",
+                    "lastName": "Eclipse",
+                    "age": "32",
+                    "occupation": "Astrologer",
+                    "backstory": "Luna Eclipse was born during a celestial event when the moon completely blocked out the sun, resulting in an eerie darkness. This unique occurrence imbued her with a deep connection to the mysteries of the universe. Luna devoted her life to studying the stars and deciphering their secrets. Her knowledge of celestial events and their potential impact on human lives is unparalleled.",
+                    "bias": "Luna believes that celestial events hold great significance in shaping a person's destiny. She tends to attribute various occurrences, including crimes, to the influence of the cosmos. Luna has a natural inclination to seek out patterns and connections between celestial events and human actions.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character3": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.7810189304466097,
+                    "happiness": 0.6105362244982876,
+                    "anger": 0.26233182740650196,
+                    "anxiety": 0.4666628128404249,
+                    "fear": 0.05297517154666376
+                },
+                "background": {
+                    "firstName": "Luna",
+                    "lastName": "Eclipse",
+                    "age": "42",
+                    "occupation": "Astroarchaeologist",
+                    "backstory": "Luna Eclipse, a renowned Astroarchaeologist, has spent her entire life studying and deciphering ancient celestial artifacts. Born into a family deeply connected to the mysteries of the cosmos, Luna's fascination with the Eclipse phenomenon began at an early age. Her ancestors were said to possess unique abilities during these astronomical events, and Luna's determination to uncover her family's secrets has driven her career.",
+                    "bias": "As an Astroarchaeologist, Luna possesses a deep admiration for the celestial wonders and a strong belief in the significance of cosmic energy. She is of the opinion that the alignment of celestial bodies during an Eclipse signifies a rare occurrence where realms intertwine, unlocking hidden knowledge and powers.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character4": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "true",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.5998826930702646,
+                    "happiness": 0.6216970592980645,
+                    "anger": 0.6761039884761105,
+                    "anxiety": 0.17491463767355608,
+                    "fear": 0.42101597646530253
+                },
+                "background": {
+                    "firstName": "Luna",
+                    "lastName": "Nocturna",
+                    "age": "29",
+                    "occupation": "Astrologer",
+                    "backstory": "Luna Nocturna, an acclaimed astrologer, was born during an eclipse, marking her as a chosen one in the year 3512. Since a young age, Luna was fascinated by the mysteries of the stars and devoted her life to understanding their secrets.",
+                    "bias": "Luna strongly believes that celestial events hold the key to unlocking the truths of the universe. She is convinced that the eclipse on the night of the murder is somehow connected to the crime.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            }
+        }
+    }
+}

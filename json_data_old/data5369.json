@@ -1,0 +1,154 @@
+{
+    "game": {
+        "playing": "false",
+        "story": {
+            "year": 1274,
+            "theme": "Conspiracy.",
+            "synopsys": "In the year 1274, a chilling conspiracy unfolds within the medieval city of Montebello. An esteemed nobleman, Lord Reginald, has been found brutally murdered in his opulent mansion, sending shockwaves through the tight-knit community. As whispers of political intrigue and secret alliances circulate through the bustling streets, tension reaches its zenith as the citizens become increasingly convinced that Lord Reginald's death is not merely a result of personal vendetta or simple greed. More and more, they suspect a deep-rooted conspiracy, carefully calculated to destabilize the fragile power structure of Montebello. As the sun sets over the towering city walls, the hunt for the truth begins, putting the brave and tenacious detective, Sir Geoffrey, against a web of treachery, hidden motives, and clandestine organizations that will go to great lengths to protect their dark secrets. Time is of the essence, for with every passing hour, the conspirators grow bolder and closer to fulfilling their sinister agenda. Only Sir Geoffrey's unwavering determination, razor-sharp intellect, and relentless pursuit of justice can unveil the truth behind the enigmatic murder of Lord Reginald and unmask the malevolent forces manipulating the fate of Montebello.",
+            "numberOfCharacters": 5,
+            "evidence": {
+                "_wittnessesComment": "whitnesses should be a list of a sebset of all the characters",
+                "weapon": "Knife",
+                "witnesses": []
+            }
+        },
+        "characters": {
+            "_comments": "fill this sections with several characters (this should match the numberOfCharacters value) that fit the story theme, only one person should be guilty",
+            "judge": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.6741411379182031,
+                    "happiness": 0.986980916280694,
+                    "anger": 0.6328241127950653,
+                    "anxiety": 0.13204490954431547,
+                    "fear": 0.6273929505303733
+                },
+                "background": {
+                    "firstName": "Arthur",
+                    "lastName": "Hartford",
+                    "age": 42,
+                    "occupation": "Counselor",
+                    "backstory": "Arthur Hartford, a well-respected counselor, came from humble beginnings. Born into a family of artisans, he always had a keen interest in human behavior. Over the years, he gained extensive knowledge in psychology and became renowned for his ability to uncover deep-rooted secrets. Arthur's reputation led him to be the go-to person for anyone seeking guidance or assistance with their personal struggles.",
+                    "bias": "Arthur's inclination towards unmasking hidden truths often made him suspicious of others. With an unwavering belief that everyone had something to hide, he developed a strong bias towards conspiracy theories, especially those involving powerful individuals manipulating the course of history.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character1": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.5269884720815068,
+                    "happiness": 0.7982457314010261,
+                    "anger": 0.7736355720497461,
+                    "anxiety": 0.25823581635056625,
+                    "fear": 0.2572435612080669
+                },
+                "background": {
+                    "firstName": "Ingrid",
+                    "lastName": "Stanhope",
+                    "age": "32",
+                    "occupation": "Royal Advisor",
+                    "backstory": "Ingrid Stanhope was born into a wealthy family with a long history of serving the royal family. She was well-educated and groomed from a young age to take on the role of a trusted advisor. Ingrid's family has a dark secret, as they were rumored to be involved in several past conspiracies against the crown.",
+                    "bias": "Ingrid Stanhope has always been suspicious of the victim, believing they were a spy working for a rival kingdom. She has been collecting evidence to prove her theory, convinced that the victim was plotting to overthrow the monarchy.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character2": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.18629091667902498,
+                    "happiness": 0.13597288726755874,
+                    "anger": 0.6144829963098052,
+                    "anxiety": 0.5085759373246804,
+                    "fear": 0.09574566058563327
+                },
+                "background": {
+                    "firstName": "Richard",
+                    "lastName": "Hawthorne",
+                    "age": "42",
+                    "occupation": "Royal Advisor",
+                    "backstory": "Richard Hawthorne is a highly respected royal advisor in the kingdom. He comes from a noble family with a long history of serving the monarchy. Richard has always been known for his cunning and intelligence, making him a valuable asset to the king.",
+                    "bias": "Richard is deeply loyal to the crown and will do anything to protect the king's interests. He strongly believes in the divine right of kings and despises anyone who questions or challenges the monarchy's authority.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character3": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.25735352035053727,
+                    "happiness": 0.9789284323779733,
+                    "anger": 0.2907068550337967,
+                    "anxiety": 0.8756208225826307,
+                    "fear": 0.41932458964708286
+                },
+                "background": {
+                    "firstName": "Henry",
+                    "lastName": "Smith",
+                    "age": "43",
+                    "occupation": "Merchant",
+                    "backstory": "Henry Smith, a seasoned merchant with a shrewd wit and a nose for profit, was deeply embedded in the political and economic intrigues of the year 1274. He had come from humble beginnings, rising through the ranks of the merchant guilds to become a well-respected and influential figure. Known for his cunning and ability to navigate complex networks, Henry was not one to shy away from questionable dealings if it meant securing his own gain. Many whispered of his involvement in covert operations, but no concrete evidence had ever been found.",
+                    "bias": "Supposedly, Henry Smith had a strong bias against the victim. Rumors circulated of a bitter rivalry between them, stemming from a long-forgotten dispute over business dealings. Some claimed that Henry harbored deep resentment and had been waiting for the perfect opportunity to exact his revenge. Whether these rumors were based in truth or merely the product of a gossip-ridden society remained to be seen.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character4": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "true",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.14050862595511482,
+                    "happiness": 0.06776139454193864,
+                    "anger": 0.04072292676351186,
+                    "anxiety": 0.29229900695368294,
+                    "fear": 0.06620744085899788
+                },
+                "background": {
+                    "firstName": "Evelyn",
+                    "lastName": "Montague",
+                    "age": "42",
+                    "occupation": "Informant",
+                    "backstory": "Evelyn Montague, a notorious and enigmatic figure in the underworld of 1274, was known for her ability to uncover and distribute confidential information to the highest bidder. Her involvement in numerous conspiracies made her enemies aplenty.",
+                    "bias": "Evelyn had a deep-rooted skepticism towards authority figures as she believed they were often part of the very conspiracies she sought to expose.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            }
+        }
+    }
+}

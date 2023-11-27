@@ -1,0 +1,154 @@
+{
+    "game": {
+        "playing": "false",
+        "story": {
+            "year": 3446,
+            "theme": "Cyberpunk",
+            "synopsys": "In the cyberpunk world of the year 3446, neon-lit cityscapes pulse with life and despair as advanced technology intertwines with the darkest corners of society. Against this backdrop, a chilling murder mystery has gripped the heart of Megalopolis-X, the last standing metropolis in the post-apocalyptic world. In a virtual metaverse, a renowned hacker and social activist known as \"Cipher,\" who fought for the rights of the oppressed, has been discovered brutally murdered. The incident sends shockwaves through the city, exposing deep-rooted corruption and a secretive criminal underworld. As the cybernetically-enhanced investigators delve deeper, they must navigate complex virtual realities, mind-jacking interfaces, and a web of deceit that threatens to consume them. Time is running out, and with mega-corporations tightening their grip on power, uncovering the truth becomes a race against both the clock and the shadows that lurk in every corner of this dystopian future.",
+            "numberOfCharacters": 5,
+            "evidence": {
+                "_wittnessesComment": "whitnesses should be a list of a sebset of all the characters",
+                "weapon": "knife",
+                "witnesses": "null"
+            }
+        },
+        "characters": {
+            "_comments": "fill this sections with several characters (this should match the numberOfCharacters value) that fit the story theme, only one person should be guilty",
+            "judge": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.767668316806182,
+                    "happiness": 0.9522850185004196,
+                    "anger": 0.8301122016908992,
+                    "anxiety": 0.23182321177408316,
+                    "fear": 0.09820264904778653
+                },
+                "background": {
+                    "firstName": "John",
+                    "lastName": "Doe",
+                    "age": "35",
+                    "occupation": "Private Investigator",
+                    "backstory": "Once a reputable detective in the cyber underworld, John Doe has seen it all. From corporate espionage to cybernetic assassinations, his skills in solving intricate mysteries have made him a legend in the streets. Abandoned as a child in the neon-lit slums of Neo Tokyo, he grew up fighting for survival, honing his instincts and street smarts. With cybernetic enhancements and a dark past, he navigates the dangerous labyrinth of the cyberpunk city, seeking justice for the helpless. ",
+                    "bias": "With a soft spot for the underdog and a deep-seated mistrust for megacorporations, John Doe is determined to expose the corruption that plagues the dystopian society he inhabits. His bitter experiences have made him equally cynical and relentless in his pursuit of the truth. ",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character1": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.045059428297473336,
+                    "happiness": 0.9416457363176515,
+                    "anger": 0.26905898272794093,
+                    "anxiety": 0.899890123777301,
+                    "fear": 0.6367790277350783
+                },
+                "background": {
+                    "firstName": "Maximus",
+                    "lastName": "Steel",
+                    "age": "37",
+                    "occupation": "Cybernetic Detective",
+                    "backstory": "Once a highly decorated soldier, Maximus Steel lost his arm and leg during a classified mission. Now fitted with advanced cybernetic limbs, he is a renowned detective specializing in cyber-crime. His notorious reputation for solving complex cases has made him both feared and respected within the cyberpunk underworld.",
+                    "bias": "Maximus Steel, being a law enforcement officer, has an inherent distrust for criminal elements in society. He believes in upholding justice, even if it means bending some rules. This bias often leads him down a path of investigating suspects from the criminal underbelly first before exploring other possibilities.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character2": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.01449879183515046,
+                    "happiness": 0.23856612810867184,
+                    "anger": 0.12108130014731722,
+                    "anxiety": 0.5518040557105062,
+                    "fear": 0.10184274143652605
+                },
+                "background": {
+                    "firstName": "Max",
+                    "lastName": "Steel",
+                    "age": "32",
+                    "occupation": "Private Investigator",
+                    "backstory": "Max Steel, a skilled and resourceful detective with a troubled past, has seen it all in the gritty city of NeoTokyo. Growing up in the slums, he clawed his way out through determination and intellect, honing his detective skills to solve cases no one else could crack. Haunted by the mysterious disappearance of his family, Max is driven by a relentless pursuit of justice.",
+                    "bias": "Having experienced the harsh realities of life in the cyberpunk future, Max Steel holds a deep distrust for corrupt corporations and politicians. He strongly believes in fighting for the rights of the oppressed and brings a much-needed infusion of hope to a city consumed by darkness and inequality.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character3": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.09212784732270995,
+                    "happiness": 0.14856771738722918,
+                    "anger": 0.717166364631384,
+                    "anxiety": 0.4190823176887648,
+                    "fear": 0.6875880489920974
+                },
+                "background": {
+                    "firstName": "Neo",
+                    "lastName": "Cruz",
+                    "age": "42",
+                    "occupation": "Cybernetic Detective",
+                    "backstory": "Neo Cruz is a renowned cybernetic detective in the year 3446. Having witnessed the rise of advanced technology and the subsequent increase in cybercrime, Neo chose to augment his own body with cybernetic enhancements to stay ahead of the game. With years of experience and an unmatched understanding of the intricacies of the cybernetic world, Neo is the go-to person when it comes to solving complex mysteries in a cyberpunk society.",
+                    "bias": "Neo harbors a deep-rooted distrust for the corrupt corporate conglomerates ruling the city. He believes that they are responsible for the widening social inequality and the increasing crime rates. His bias against the corporate elites often puts him at odds with those in power, but it also fuels his determination to uncover the truth and bring justice to the victims.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character4": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "true",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.7844378504807346,
+                    "happiness": 0.9094912845637495,
+                    "anger": 0.004236543403286497,
+                    "anxiety": 0.600583741489374,
+                    "fear": 0.6677354149734328
+                },
+                "background": {
+                    "firstName": "Dex",
+                    "lastName": "Nightshade",
+                    "age": "32",
+                    "occupation": "Cyberpunk Detective",
+                    "backstory": "Dex Nightshade, a renowned Cyberpunk Detective known for his unparalleled skills in solving high-profile cases, has risen to fame in NeoCity. With a troubled past as a former hacker turned law enforcer, Dex has developed a deep understanding of the underbelly of this futuristic metropolis. His expertise in cybernetics and knowledge of the criminal underworld make him the go-to investigator for the city's most perplexing mysteries.",
+                    "bias": "With a distrustful lens on the world, Dex questions everyone and everything, always seeking the hidden truth behind the glamorous facade of NeoCity. He believes that technology can both empower and corrupt, making him vigilant against any abuses of power. Dex's personal mission is to maintain order in a city on the brink of chaos, where dark secrets lurk beneath the towering skyscrapers.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,154 @@
+{
+    "game": {
+        "playing": "false",
+        "story": {
+            "year": 2002,
+            "theme": "Betrayal",
+            "synopsys": "In the quiet town of Hollowbrook, 2002 commenced with an air of serenity, blissfully ignorant of the tumultuous events that would soon unravel. The close-knit community had always prided itself on neighborly bonds, harbouring a sense of safety and trust. However, the illusion of harmony was shattered when the lifeless body of Timothy Hartfield, a prominent local businessman, was discovered in his opulent mansion. The heinous crime, tinged with a deep sense of betrayal, sent shockwaves through the heart of Hollowbrook. As the investigation delves deeper into the lives of the townspeople, hidden secrets and dark motives begin to emerge, blurring the lines of loyalty and treachery. In this web of deceit, everyone becomes a suspect, and the hunt for the killer unveils a sinister truth that threatens to tear the fabric of the community apart.",
+            "numberOfCharacters": 5,
+            "evidence": {
+                "_wittnessesComment": "whitnesses should be a list of a sebset of all the characters",
+                "weapon": "knife",
+                "witnesses": "null"
+            }
+        },
+        "characters": {
+            "_comments": "fill this sections with several characters (this should match the numberOfCharacters value) that fit the story theme, only one person should be guilty",
+            "judge": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.9961459628713848,
+                    "happiness": 0.3281595228973133,
+                    "anger": 0.04045466807363651,
+                    "anxiety": 0.6715428079457475,
+                    "fear": 0.9022561862390996
+                },
+                "background": {
+                    "firstName": "unknown",
+                    "lastName": "unknown",
+                    "age": "unknown",
+                    "occupation": "unknown",
+                    "backstory": "The character's identity and background information are shrouded in mystery. No one seems to know much about them, adding an air of suspicion to their involvement in the betrayal-themed murder mystery of 2002.",
+                    "bias": "unknown",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character1": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.40906318383391005,
+                    "happiness": 0.9947037910572563,
+                    "anger": 0.18151523694490013,
+                    "anxiety": 0.2021786702358186,
+                    "fear": 0.11592441955851973
+                },
+                "background": {
+                    "firstName": "Daniel",
+                    "lastName": "Williams",
+                    "age": "45",
+                    "occupation": "Businessman",
+                    "backstory": "Daniel Williams was a successful entrepreneur who built his empire from scratch. He was known for his cunning and manipulative nature. Despite his public image as a philanthropist, rumors circulated that he engaged in shady business dealings.",
+                    "bias": "As a cunning businessman, Daniel always put his interests before others. He had a reputation for betraying his associates to advance his own agenda.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character2": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.8566098535453512,
+                    "happiness": 0.5937410844331826,
+                    "anger": 0.5181328224213145,
+                    "anxiety": 0.08101477150968872,
+                    "fear": 0.0016688001974454192
+                },
+                "background": {
+                    "firstName": "Lucius",
+                    "lastName": "Blackwood",
+                    "age": "48",
+                    "occupation": "Business tycoon",
+                    "backstory": "Lucius Blackwood was a man driven by power and wealth. Growing up in a poverty-stricken family, he made it his mission to rise above his circumstances. Through cunning and ruthlessness, Lucius built a vast empire, earning a notorious reputation along the way.",
+                    "bias": "Lucius had a deep-seated hatred for the victim, stemming from a bitter business rivalry. The victim was encroaching on Lucius' territory, threatening to expose his shady dealings. Consumed by jealousy and a thirst for revenge, Lucius was determined to eliminate the competition by any means necessary.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character3": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.31427310758484917,
+                    "happiness": 0.792628880589523,
+                    "anger": 0.44276596538065727,
+                    "anxiety": 0.29511544114677246,
+                    "fear": 0.36441882862529906
+                },
+                "background": {
+                    "firstName": "unknown",
+                    "lastName": "unknown",
+                    "age": "unknown",
+                    "occupation": "unknown",
+                    "backstory": "The character had a troubled past, growing up in a dysfunctional family and experiencing several traumatic events. This background shaped their personality, making them prone to mistrust and harbor deep-seated grudges. Over the years, they developed a cunning and manipulative nature, always plotting and seeking opportunities for personal gain.",
+                    "bias": "The character holds a strong bias against the victim, fueled by envy and a sense of injustice. They believe the victim had unfairly obtained wealth and power, leading to resentment and a desire for revenge.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character4": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "true",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.29866763994126866,
+                    "happiness": 0.5481153203919027,
+                    "anger": 0.48285047458215746,
+                    "anxiety": 0.028583874552808974,
+                    "fear": 0.7582793672636804
+                },
+                "background": {
+                    "firstName": "John",
+                    "lastName": "Doe",
+                    "age": 35,
+                    "occupation": "Detective",
+                    "backstory": "John Doe was a hardworking detective known for his relentless pursuit of justice. He had a reputation for being thorough and dedicated, always determined to solve even the most complex cases. He joined the police force in 1995 and quickly rose through the ranks due to his exceptional skills and unwavering commitment to his job. However, underneath his professional facade, John carried some deep-seated trust issues stemming from a childhood betrayal. This past experience made him exceptionally wary of others and always suspicious of their intentions.",
+                    "bias": "Due to his personal history, John had a strong bias against people he perceived as untrustworthy or capable of deceit. He always approached his investigations with a healthy dose of skepticism and was not easily swayed by emotions or personal relationships. His primary focus was on collecting evidence and facts to build a solid case against any potential suspect.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            }
+        }
+    }
+}

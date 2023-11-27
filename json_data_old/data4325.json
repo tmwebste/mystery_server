@@ -1,0 +1,154 @@
+{
+    "game": {
+        "playing": "false",
+        "story": {
+            "year": 387,
+            "theme": "Intrigue",
+            "synopsys": "In the year 387, in the heart of a thriving ancient city, darkness enveloped a grandeur residence perched atop a hill, casting an eerie shadow over the town below. Intrigue whispered through the narrow cobblestone streets as word spread of a heinous crime committed within the household. A prominent aristocrat, known for his opulent parties and secret dealings, was found dead in his study, a grotesque wound marring his lifeless body. Whispers of betrayal, revenge, and unbridled ambition filled the silent air, as everyone who had crossed paths with the deceased aristocrat became a potential suspect. With the ruling elites skulking behind their lavish masks, and the tension thickening with each passing moment, a seasoned detective arrived, ready to untangle the web of deceit and expose the truth hidden among the secrets of this ancient city.",
+            "numberOfCharacters": 5,
+            "evidence": {
+                "_wittnessesComment": "whitnesses should be a list of a sebset of all the characters",
+                "weapon": "knife",
+                "witnesses": "null"
+            }
+        },
+        "characters": {
+            "_comments": "fill this sections with several characters (this should match the numberOfCharacters value) that fit the story theme, only one person should be guilty",
+            "judge": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.007004890745013759,
+                    "happiness": 0.10295773104475248,
+                    "anger": 0.9292043098439144,
+                    "anxiety": 0.21006429082264766,
+                    "fear": 0.3839241469966217
+                },
+                "background": {
+                    "firstName": "Emilia",
+                    "lastName": "Blackwood",
+                    "age": "43",
+                    "occupation": "Noblewoman",
+                    "backstory": "Emilia Blackwood is a wealthy noblewoman renowned for her cunning and manipulative nature. Born into a prominent family, she inherited her family's fortunes and estate, making her a powerful figure in society. Emilia is known to be highly intelligent and resourceful, always plotting and scheming to maintain her status and influence. Her connections reach far and wide, ensuring that she always has eyes and ears in every corner of the city. Emilia's bias lies in reaping the rewards of power and luxury, often using her connections to acquire rare and valuable items. There are rumors that Emilia had a deep-seated grudge against the victim, but whether there is any truth to this remains to be discovered.",
+                    "bias": "Emilia's bias lies in reaping the rewards of power and luxury, often using her connections to acquire rare and valuable items.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character1": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.23871370378355772,
+                    "happiness": 0.2792141481144361,
+                    "anger": 0.7988335599329409,
+                    "anxiety": 0.552166391611298,
+                    "fear": 0.4310795025540858
+                },
+                "background": {
+                    "firstName": "Maximus",
+                    "lastName": "Seraphicus",
+                    "age": "45",
+                    "occupation": "Nobleman",
+                    "backstory": "Maximus Seraphicus comes from a wealthy and influential family, known for their involvement in political affairs. He has always been surrounded by power and intrigue, making him well-versed in the art of manipulation and secrets.",
+                    "bias": "Maximus Seraphicus is known for his strong bias towards maintaining the status quo and preserving the existing power structure. He has a preference for traditional values and conservative ideologies, which often puts him at odds with those seeking change or reform.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character2": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.43516032026794427,
+                    "happiness": 0.4685946121841692,
+                    "anger": 0.4366875289003256,
+                    "anxiety": 0.4471962560915177,
+                    "fear": 0.9431930664399741
+                },
+                "background": {
+                    "firstName": "Julius",
+                    "lastName": "Marcellus",
+                    "age": "45",
+                    "occupation": "Senator",
+                    "backstory": "Julius Marcellus comes from a prestigious and influential family. He has always been involved in politics and has made significant contributions to the debate surrounding power struggles within the Senate. Rumors suggest that he has had a history of orchestrating political assassinations to eliminate his rivals.",
+                    "bias": "Julius Marcellus has a deep-rooted bias against the victim, due to an old rivalry between them regarding their opposing political agendas. The victim was a vocal advocate for democratic reforms, which threatened Julius Marcellus' influential position within the Senate.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character3": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.6799972336855515,
+                    "happiness": 0.12219473164124328,
+                    "anger": 0.16869695749642233,
+                    "anxiety": 0.8317952864335358,
+                    "fear": 0.09310526726080459
+                },
+                "background": {
+                    "firstName": "Ezekiel",
+                    "lastName": "Blackwood",
+                    "age": "42",
+                    "occupation": "Royal Advisor",
+                    "backstory": "Ezekiel Blackwood, a mysterious figure with a dubious past, has always had an air of intrigue surrounding him. Rumors suggest ties to underground organizations and secret alliances, making him an enigmatic character in the kingdom. His true motives and loyalties remain unknown, leaving many suspicious of his actions. Known to be exceptionally cunning and manipulative, Ezekiel has managed to navigate the complex political landscape, always staying a step ahead of his rivals. Some say he possesses a hidden agenda, ready to unfold when the time is right.",
+                    "bias": "Skeptical",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character4": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "true",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.7474720063807049,
+                    "happiness": 0.09103437456685037,
+                    "anger": 0.19722211799285072,
+                    "anxiety": 0.14779559323763525,
+                    "fear": 0.6655444678581915
+                },
+                "background": {
+                    "firstName": "Mysterious",
+                    "lastName": "Unknown",
+                    "age": "Unknown",
+                    "occupation": "Conspiracy Theorist",
+                    "backstory": "Rumored to have deep ties with secret societies and covert operations, the Mysterious Unknown operates in the shadows, gathering and disseminating information about dark truths and hidden agendas.",
+                    "bias": "Suspicious of everyone and everything, the Mysterious Unknown believes that behind every event lies a web of intrigue and manipulation. They often suspect foul play in even the most innocent of circumstances.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            }
+        }
+    }
+}

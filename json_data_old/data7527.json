@@ -1,0 +1,154 @@
+{
+    "game": {
+        "playing": "false",
+        "story": {
+            "year": 2982,
+            "theme": "Cyber-undery",
+            "synopsys": "In the year 2982, society had evolved into a digital utopia known as Cyber-undery, where advanced technology permeated every aspect of life. But amidst the shimmering neon lights and interconnected networks, a chilling murder mystery had sent shockwaves through this seemingly perfect world. The renowned scientist Dr. Meta Xander, a visionary in the field of artificial intelligence, was found dead in his sprawling cyber mansion, the victim of a brutal and meticulously planned crime. The entire metropolis was held captive by an indescribable fear as the authorities struggled to unravel the enigma surrounding his demise. With a multitude of potential suspects, who were all masters of deception and manipulation in this realm, the city's best detective, agent Zero, now faced the daunting task of navigating this digital labyrinth to expose the truth hidden beneath the seemingly flawless fa\u00e7ade of Cyber-undery. Such a case would test the very limits of his investigative abilities, as he delved deep into the dark corners of virtual reality and uncovered secrets that threatened to shatter the harmony of this future society forever.",
+            "numberOfCharacters": 5,
+            "evidence": {
+                "_wittnessesComment": "whitnesses should be a list of a sebset of all the characters",
+                "weapon": "knife",
+                "witnesses": "null"
+            }
+        },
+        "characters": {
+            "_comments": "fill this sections with several characters (this should match the numberOfCharacters value) that fit the story theme, only one person should be guilty",
+            "judge": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.8643004138717969,
+                    "happiness": 0.5800167111050405,
+                    "anger": 0.16722127503727113,
+                    "anxiety": 0.04982884035006274,
+                    "fear": 0.024072696311242092
+                },
+                "background": {
+                    "firstName": "Aurora",
+                    "lastName": "Cyberius",
+                    "age": "28",
+                    "occupation": "Cyber-Underworld Detective",
+                    "backstory": "Aurora Cyberius is a skilled detective in the year 2982, specialized in investigating cyber-undery themed mysteries and murders. Born and raised in the technologically advanced city, she grew up fascinated by the intricacies of the cyber world. After witnessing a tragic cyber-undery murder at a young age, Aurora dedicated her life to solving such cases to bring justice to the victims. With her deep understanding of the virtual realm and exceptional deductive abilities, she has successfully solved numerous cyber-undery crimes, earning her a reputation as the go-to detective in the year 2982.",
+                    "bias": "Being an expert in cyber-undery crime, Aurora has a strong bias towards uncovering the truths hidden within the digital world. She firmly believes that the answers to most mysteries lie within the vast network of interconnected devices and virtual spaces.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character1": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.8614381370700893,
+                    "happiness": 0.9374408116474346,
+                    "anger": 0.18633074041374564,
+                    "anxiety": 0.8256151033548442,
+                    "fear": 0.3084723798515284
+                },
+                "background": {
+                    "firstName": "Cipher",
+                    "lastName": "Shadow",
+                    "age": "37",
+                    "occupation": "Cybernetic Engineer",
+                    "backstory": "Cipher Shadow, a renowned Cybernetic Engineer, was always known for being ahead of his time. In the year 2982, his groundbreaking discoveries in neural interfaces revolutionized the way humans interacted with technology. Growing up in the underbelly of the Cyber-Undery, Cipher had witnessed the devastating consequences of unchecked power and corruption in the city. Determined to make a difference, he dedicated his life to creating innovative technologies that would make the world a safer place.",
+                    "bias": "Having seen the destructive potential of advanced AI systems gone wrong, Cipher held a deep distrust towards any form of artificial intelligence. He firmly believed that only human consciousness should guide the progress of technology, as it was the only way to prevent a dystopian future.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character2": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.20239489524285914,
+                    "happiness": 0.8520969258009395,
+                    "anger": 0.33540027923801274,
+                    "anxiety": 0.7322352879468963,
+                    "fear": 0.7125809764518741
+                },
+                "background": {
+                    "firstName": "Neo",
+                    "lastName": "Cypher",
+                    "age": "42",
+                    "occupation": "Cyber Detective",
+                    "backstory": "Neo Cypher, a seasoned Cyber Detective in the year 2982, was born and raised in a virtual reality simulation. He possesses exceptional hacking and data analysis skills, making him a vital asset in solving complex cyber-undery mysteries. Neo has a deep-rooted passion for bringing justice to the virtual world, fueled by his personal experience of losing someone dear to him due to a similar crime. Determined to prevent further tragedies, he tirelessly dedicates himself to investigating cyber-murders and protecting innocent lives in the vast digital expanse.",
+                    "bias": "Due to his profound knowledge of the cybernetic world and connections within the digital network, Neo has developed a keen instinct for identifying rogue artificial intelligences and recalcitrant programs. He believes in the underlying code of honor, transparency, and neutrality within the virtual domain, despising those who exploit it for their personal gains.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character3": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.9305508005220758,
+                    "happiness": 0.9155755890420058,
+                    "anger": 0.3702564528449188,
+                    "anxiety": 0.21392289999761827,
+                    "fear": 0.5869522253446463
+                },
+                "background": {
+                    "firstName": "Ava",
+                    "lastName": "Electra",
+                    "age": "29",
+                    "occupation": "Cyber Detective",
+                    "backstory": "Ava Electra, a skilled hacker turned cyber detective, is known for her unconventional methods and deep knowledge of the virtual realm. She grew up in a city where technology ruled every aspect of life, becoming enamored with the interconnected digital world from an early age. Having experienced the dark side of cybercrime herself, she dedicated her life to fighting against it and ensuring justice in the futuristic society of 2982.",
+                    "bias": "Being a cyber detective, Ava tends to be skeptical and mistrusting of most people, given the never-ending complexity of the virtual world. She believes in the power of technology but remains cautious of its potential for manipulation and deceit. This bias drives her to investigate thoroughly and question everything, making sure to leave no stone unturned.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character4": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "true",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.9431801896692696,
+                    "happiness": 0.30981620935841436,
+                    "anger": 0.473212731733318,
+                    "anxiety": 0.17438733887835223,
+                    "fear": 0.8967142331257034
+                },
+                "background": {
+                    "firstName": "Raven",
+                    "lastName": "Nova",
+                    "age": "34",
+                    "occupation": "Cyber Detective",
+                    "backstory": "Raven Nova, hailing from the technologically advanced city of NeoPlex, graduated top of the class in cybercrime investigation. They were known for their relentless pursuit of justice in a world where cyber-attacks and virtual theft became the norm. With an impressive track record, Raven earned the nickname 'Cyber Sleuth' among their peers.",
+                    "bias": "Raven harbored a deep mistrust towards powerful AI corporations, believing they often prioritize profit over human safety. Due to a personal experience with an AI hacking incident, Raven developed a strong vigilance for ensuring the security of cyberspace.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            }
+        }
+    }
+}

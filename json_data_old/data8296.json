@@ -1,0 +1,154 @@
+{
+    "game": {
+        "playing": "false",
+        "story": {
+            "year": -469,
+            "theme": "Intrigue",
+            "synopsys": "In the year -469, amidst the era of great turmoil and political unrest, a mysterious murder unfolds, enveloping the entire land in an aura of perplexity and intrigue. The body of a prominent senator, known for his incisive wit and cunning diplomacy, is discovered lifeless in his opulent chambers. The scene is marred with eerie silence and an air of malevolence, as the dark corners of his luxurious villa reveal twisted secrets and hidden agendas. Whispers of political rivalries, long-held grudges, and shadowy alliances permeate the city, as everyone becomes a potential suspect in this intricate web of murder. As the investigation deepens, the restless populace becomes consumed by a desire for justice, as they strive to unravel the intricate layers of deception and betrayal that shroud this bewildering case. In a realm teetering on the brink of chaos and power struggles, the truth must prevail - no matter the cost.",
+            "numberOfCharacters": 5,
+            "evidence": {
+                "_wittnessesComment": "whitnesses should be a list of a sebset of all the characters",
+                "weapon": "knife",
+                "witnesses": "null"
+            }
+        },
+        "characters": {
+            "_comments": "fill this sections with several characters (this should match the numberOfCharacters value) that fit the story theme, only one person should be guilty",
+            "judge": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.37244090734577595,
+                    "happiness": 0.8828994475685185,
+                    "anger": 0.34360790357507487,
+                    "anxiety": 0.16046753516518475,
+                    "fear": 0.6239507572147338
+                },
+                "background": {
+                    "firstName": "Gaius",
+                    "lastName": "Calpurnius",
+                    "age": 40,
+                    "occupation": "Politician",
+                    "backstory": "Gaius Calpurnius comes from a prominent family with a long-standing history in political affairs. He has always been known for his charming demeanor and persuasive skills, making him a successful and influential figure in ancient Rome. However, beneath his affable facade lies a web of secrets that he tirelessly keeps hidden.",
+                    "bias": "Gaius Calpurnius has a biased opinion towards maintaining the status quo and preserving the power dynamics in society. He believes that stability and order are essential for the prosperity of Rome, even if it means resorting to questionable methods.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character1": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.20607151554340852,
+                    "happiness": 0.2893030888429151,
+                    "anger": 0.05194072100577651,
+                    "anxiety": 0.4997883029206689,
+                    "fear": 0.23408867476610862
+                },
+                "background": {
+                    "firstName": "Sirius",
+                    "lastName": "Black",
+                    "age": "38",
+                    "occupation": "Nobleman",
+                    "backstory": "Sirius Black, a nobleman with a mysterious past, was notorious in -469 for his intricate plots and schemes. He was known to be involved in various conspiracies and secret dealings, making him a prime suspect in the intrigue-themed mystery murder.",
+                    "bias": "Having an ulterior motive for his actions, Sirius Black often manipulated people to further his own goals. His cunning nature and ability to deceive made him an intriguing and enigmatic character.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character2": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.34298094232966914,
+                    "happiness": 0.9667212161782959,
+                    "anger": 0.7149238207603216,
+                    "anxiety": 0.20005998958354032,
+                    "fear": 0.6052677881562609
+                },
+                "background": {
+                    "firstName": "Lady Amaryllis",
+                    "lastName": "Dumont",
+                    "age": "33",
+                    "occupation": "Aristocrat",
+                    "backstory": "Lady Amaryllis Dumont was born into a powerful and influential noble family. Growing up in luxury and privilege, she quickly learned the art of political maneuvering and manipulation. Rumors of her involvement in secret societies and clandestine affairs have always followed her, adding an air of mystery and intrigue to her persona. Lady Dumont's passion for collecting ancient artifacts has led her to acquire an impressive collection of rare and valuable items, some of which are said to possess dark magical powers. However, her true motivations and intentions remain shrouded in secrecy.",
+                    "bias": "Lady Dumont holds a deep-rooted disdain for the victim, considering them an obstacle to her ambitions and a threat to her family's status. She has made several attempts to discredit and undermine them, often using her extensive network of contacts and informants to gather compromising information. She possesses a ruthless determination to protect her family's interests and is willing to go to great lengths to eliminate anyone who poses a threat.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character3": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "false",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.11480965719122371,
+                    "happiness": 0.9832671454855588,
+                    "anger": 0.7441943272454731,
+                    "anxiety": 0.7005261199169039,
+                    "fear": 0.6971164359420097
+                },
+                "background": {
+                    "firstName": "Cassius",
+                    "lastName": "Aurelius",
+                    "age": "45",
+                    "occupation": "Senator",
+                    "backstory": "Cassius Aurelius, a distinguished Senator from Rome, known for his political skills and cunning nature, had always been surrounded by mystery. Born into a powerful family with a long history of political intrigue, Cassius grew up learning the art of manipulation and deception. His family's dark secrets and clandestine dealings shaped his character, making him a mastermind behind the scenes. Cassius's involvement with the victim could have been part of a larger plot that now calls for a detailed investigation.",
+                    "bias": "Cassius's upbringing in a family known for their cunning and deceptive nature might have influenced his bias towards achieving power and maintaining control. He is willing to go to great lengths to attain his objectives, often resorting to intricate schemes and manipulation. Cassius's political ambitions may have entangled him in a web of secrets and lies, making him a prime suspect in this murder mystery.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            },
+            "character4": {
+                "_comments": "the judge should never be guilty",
+                "guilty": "true",
+                "attributes": {
+                    "_comments": "all of theses should be float values between 0 and 1",
+                    "saddness": 0.8414742188903964,
+                    "happiness": 0.7785045780652762,
+                    "anger": 0.23744050015059248,
+                    "anxiety": 0.1377673247154403,
+                    "fear": 0.647018233493128
+                },
+                "background": {
+                    "firstName": "Lucius",
+                    "lastName": "Quintus",
+                    "age": "47",
+                    "occupation": "Senator",
+                    "backstory": "Lucius Quintus was a powerful and influential senator in Rome during the year -469. Known for his cunning and political maneuvering, Quintus always had an air of mystery surrounding him. Many whispered of his involvement in various conspiracies and secret meetings, fueling rumors of his connection to a secret society known as the Order of Shadows. His past was shrouded in secrecy, with whispers of illicit affairs and dark secrets that he would go to great lengths to protect. Quintus's involvement with the victim had recently come to light, raising suspicions of his involvement in the murder. As the investigation unfolds, his intricate web of connections and ties to powerful figures unravel, revealing a sinister plot that reaches far beyond the victim's death.",
+                    "bias": "Lucius Quintus harbored a deep disdain for the aristocracy, believing that their unchallenged power corrupted the empire. His intrigue-themed murder could have been motivated by his desire to expose the dark underbelly of the ruling class, revealing their involvement in heinous crimes and scandals. Quintus's bias against the elite would become a driving force in the investigation, leading the detectives to delve deeper into the victim's connections and dig out the truth behind their gruesome demise.",
+                    "connections": [
+                        "victim"
+                    ]
+                },
+                "response": {
+                    "responseSentiment": "null",
+                    "responseText": "null"
+                }
+            }
+        }
+    }
+}
