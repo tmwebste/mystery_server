@@ -60,7 +60,7 @@ def createStoryDescription(storyYear, storyTheme):
     return chat_completion
 
 def createOneWord(request):
-    instructions = f"{request}. Only respont with a single word and do not provide any explaination."
+    instructions = f"{request}. Only respond with a single word and do not provide any explaination."
     chat_completion = openai.chat.completions.create(model="gpt-3.5-turbo", 
                                                     messages=[{"role": "user", 
                                                                 "content": f"{instructions}"}]).choices[0].message.content
