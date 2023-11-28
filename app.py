@@ -30,7 +30,9 @@ def get_random_json_data():
 @app.route('/')
 def serve_random_json():
     random_data = get_random_json_data()
-    return jsonify(random_data)
+    response = jsonify(random_data)
+    response.headers.add('Content-Type', 'application/json')
+    return response
 
 # Define a route to receive JSON data, a message, modify the JSON data, and return it
 @app.route('/character_response', methods=['POST'])
@@ -52,9 +54,12 @@ def modify_json():
         characterResponse = createCharacterResponse(message, characterProfile, characterResponseTemplate, game_synopsis)
         
         print("response:", characterResponse)
-        return jsonify(characterResponse)
+        response = jsonify(characterResponse)
+        response.headers.add('Content-Type', 'application/json')
+        return response
     except Exception as e:
         return jsonify({'error': str(e)})
 
 if __name__ == '__main__':
-    app.run(host='192.168.50.109',debug=True)
+    # app.run(host='192.168.50.109',debug=True)
+    app.run(debug=True)
