@@ -189,9 +189,30 @@ def createCompleteStoryJSON():
     storyTemplate = createStoryTemplate()
     exportjson(storyTemplate)
 
-def getMessageSentament(message, responseTemplate):
+def getMessageSentament(message):
     print("Evaluating response sentament")
     instructions = f"You will be evaluating the sentament of the user message. The sentament can only be positive or negative. Please respond with only the word positive or negative and no comments. do not respond with any comments."
+
+    try:
+        chat_completion = openai.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "system", "content": instructions},
+                {"role": "user", "content": f"{message}"},
+            ],
+             
+        ).choices[0].message.content
+        response = chat_completion
+        return response
+
+    except Exception as e:
+        print(f"Error in createCharacterResponse: {e}")
+        return {'error': str(e)}
+
+
+def getMessageVerdict(message):
+    print("Evaluating verdict")
+    instructions = f"You will be evaluating the verdict of the user message, you should be determining if the message is finding the subject guilty or not in a crime. The verdict can only be true or false. Please respond with only the word true or false and no comments. do not respond with any comments."
 
     try:
         chat_completion = openai.chat.completions.create(
@@ -225,7 +246,30 @@ def createCharacterResponse(message, characterProfile, responseTemplate, story):
         ).choices[0].message.content
         response = responseTemplate
         response['response'] = chat_completion
-        response['responseSentament'] = getMessageSentament(chat_completion, responseTemplate)
+        response['responseSentament'] = getMessageSentament(chat_completion)
+        return response
+
+    except Exception as e:
+        print(f"Error in createCharacterResponse: {e}")
+        return {'error': str(e)}
+
+
+def createVerdict(messages, suspectProfile, responseTemplate, story):
+    print("Generating character response")
+    instructions = f"using plain language, create a 2 sentence response. you are the jugde in the following case: {json.dumps(story)}. The user is accusing the suspect described here: {json.dumps(suspectProfile)}. Your perdict should be based on the suspects profile and the coorespondence sent my the user. Please respond with only the the judges determination of if they are guilty and no comments. Do not break character; do not respond with any comments."
+
+    try:
+        chat_completion = openai.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "system", "content": instructions},
+                {"role": "user", "content": f"{messages}"},
+            ],
+             
+        ).choices[0].message.content
+        response = responseTemplate
+        response['response'] = chat_completion
+        response['responseSentament'] = getMessageVerdict(chat_completion)
         return response
 
     except Exception as e:

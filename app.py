@@ -59,6 +59,32 @@ def modify_json():
         return response
     except Exception as e:
         return jsonify({'error': str(e)})
+    
+
+@app.route('/get_verdict', methods=['POST'])
+def get_verdict():
+    global currentGameFile
+    
+    print("request:", request.json)
+    
+    try:
+        # Get the JSON data, message, and synopsis from the request
+        request_data = request.json
+        message = request_data.get('messages', '')
+        characterProfile = request_data.get('characterProfile', {})
+        game_synopsis = request_data.get('synopsys', '')  # Extracting synopsis from the client's request
+
+        print("calling response function", message, characterProfile, game_synopsis)
+        
+        # Pass the message, characterProfile, and game_synopsis to the function
+        verdict = createVerdict(message, characterProfile, characterResponseTemplate, game_synopsis)
+        
+        print("response:", verdict)
+        response = jsonify(verdict)
+        response.headers.add('Content-Type', 'application/json')
+        return response
+    except Exception as e:
+        return jsonify({'error': str(e)})
 
 if __name__ == '__main__':
     # app.run(host='192.168.50.109',debug=True)
